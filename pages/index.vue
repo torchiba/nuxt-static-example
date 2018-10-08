@@ -3,22 +3,11 @@
 		<div>
 			<app-logo/>
 			<h1 class="title">
-				トーチデザイン
+				@torchiba
 			</h1>
 			<h2 class="subtitle">
-				横浜・東京で活動するフロントエンドエンジニア、
-				とーちばのポートフォリオサイトです。
+				ポートフォリオ予定地
 			</h2>
-			<div class="links">
-				<a
-				href="https://nuxtjs.org/"
-				target="_blank"
-				class="button--green">Documentation</a>
-				<a
-				href="https://github.com/nuxt/nuxt.js"
-				target="_blank"
-				class="button--grey">GitHub</a>
-			</div>
 		</div>
 	</section>
 </template>
@@ -35,10 +24,10 @@ export default {
 
 <style>
 .container {
-	min-height: 100vh;
+	flex: 1;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	text-align: center;
 }
 

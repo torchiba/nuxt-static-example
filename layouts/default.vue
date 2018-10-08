@@ -1,16 +1,19 @@
 <template>
-	<div>
+	<div class="page">
 		<my-header/>
 		<nuxt/>
+		<my-footer/>
 	</div>
 </template>
 
 <script>
 import MyHeader from '~/components/MyHeader.vue';
+import MyFooter from '~/components/MyFooter.vue';
 
 export default {
 	components: {
 		MyHeader,
+		MyFooter,
 	},
 };
 </script>
@@ -36,7 +39,13 @@ html {
 	margin: 0;
 }
 
-.button--green {
+.page {
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+/* .button--green {
 	display: inline-block;
 	border-radius: 4px;
 	border: 1px solid #3b8070;
@@ -63,6 +72,6 @@ html {
 .button--grey:hover {
 	color: #fff;
 	background-color: #35495e;
-}
+} */
 </style>
 
