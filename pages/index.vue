@@ -1,15 +1,9 @@
-<template>
-	<section class="container">
-		<div>
-			<app-logo/>
-			<h1 class="title">
-				@torchiba
-			</h1>
-			<h2 class="subtitle">
-				ポートフォリオ予定地
-			</h2>
-		</div>
-	</section>
+<template lang="pug">
+	section.container
+		div
+			app-logo
+			h1.title torchiba
+			h2.subtitle ポートフォリオ予定地
 </template>
 
 <script>
@@ -22,7 +16,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .container {
 	flex: 1;
 	display: flex;
