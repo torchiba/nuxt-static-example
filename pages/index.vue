@@ -1,17 +1,34 @@
-<template lang="pug">
-	section.container
+<template>
+	<!-- section.container
 		div
 			app-logo
 			h1.title torchiba
-			h2.subtitle ポートフォリオ予定地
+			h2.subtitle ポートフォリオ予定地 -->
+	<el-tabs v-model="activeName" @tab-click="handleClick">
+      <el-tab-pane label="User" name="first">User</el-tab-pane>
+      <el-tab-pane label="Config" name="second">Config</el-tab-pane>
+      <el-tab-pane label="Role" name="third">Role</el-tab-pane>
+      <el-tab-pane label="Task" name="fourth">Task</el-tab-pane>
+    </el-tabs>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue';
+// import AppLogo from '~/components/AppLogo.vue';
 
 export default {
 	components: {
-		AppLogo,
+		// AppLogo,
+	},
+	data() {
+		return {
+			radio: 1,
+			activeName: 'first',
+		};
+	},
+	methods: {
+		handleClick(tab, event) {
+			console.log(tab, event);
+		},
 	},
 };
 </script>
