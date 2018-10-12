@@ -23,13 +23,13 @@ module.exports = {
 			href: '/favicon.ico'
 		}]
 	},
-	// グローバルに適用したいCSS
-	css: [
-		// プロジェクト内の CSS ファイル
-		'@/assets/css/main.css',
-		// プロジェクト内の SCSS ファイル
-		'@/assets/css/main.scss'
-	],
+	// // グローバルに適用したいCSS
+	// css: [
+	// 	// プロジェクト内の CSS ファイル
+	// 	'@/assets/css/main.css',
+	// 	// プロジェクト内の SCSS ファイル
+	// 	'@/assets/css/main.scss'
+	// ],
 
 	// css: [
 	// 	'@css/app.css'
