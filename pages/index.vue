@@ -3,6 +3,7 @@
 		section.header
 			h1 @torchiba
 			p 横浜・都内が活動拠点のフロントエンドエンジニア
+			img(src="~/static/img_profile.png")
 
 		section.profile
 			h2 プロフィール
@@ -37,12 +38,27 @@ export default {
 </script>
 
 <style lang="scss">
+.page-enter-active,
+.page-leave-active {
+	transition: opacity 0.15s;
+}
+.page-enter,
+.page-leave-to {
+	opacity: 0;
+}
+
 .container {
 	flex: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+}
+
+section {
+	border-bottom: 3px solid #ddd;
+	padding: 2em 0;
+	// text-align: center;
 }
 
 .title {
