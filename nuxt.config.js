@@ -57,11 +57,15 @@ module.exports = {
 					loader: 'eslint-loader',
 					exclude: /(node_modules)/
 				})
-
-				// // Add postcss loader for CSS files
-				// const cssLoader = config.module.rules.find((loader) => loader.test.toString() === '/\\.css$/')
-				// cssLoader.use.push('postcss-loader')
 			}
-		}
-	}
+		},
+		vendor: ['element-ui']
+	},
+	plugins: [
+		'~plugins/element-ui'
+	],
+	css: [
+		'element-ui/lib/theme-chalk/index.css'
+	]
+	// },
 }
