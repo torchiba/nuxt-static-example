@@ -8,8 +8,11 @@ module.exports = {
 	/*
 	 ** Headers of the page
 	 */
+	router: {
+		base: '/torchiba.github.io/'
+	},
 	head: {
-		title: 'nuxt-static-example',
+		title: 'torchiba.github.io',
 		meta: [{
 				charset: 'utf-8'
 			},
@@ -26,7 +29,7 @@ module.exports = {
 		link: [{
 			rel: 'icon',
 			type: 'image/x-icon',
-			href: '/favicon.ico'
+			href: '/torchiba.github.io/favicon.ico'
 		}]
 	},
 	// // グローバルに適用したいCSS
