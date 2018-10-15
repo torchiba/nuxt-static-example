@@ -4,13 +4,16 @@
 	"private": true,
 	"description": "torchiba's portfolio",
 	"author": "torchiba <account@torch-design.work>",
+	"dependencies": {
+		"nuxt": "latest"
+	},
 	"scripts": {
 		"build": "nuxt build",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
 		"dev": "nuxt",
+		"start": "nuxt start",
 		"generate": "nuxt generate",
 		"precommit": "npm run lint",
-		"start": "nuxt start",
 		"deploy": "push-dir --dir=dist --branch=master --cleanup"
 	},
 	"dependencies": {
