@@ -2,18 +2,16 @@
 	"name": "torchiba.github.io",
 	"version": "1.0.0",
 	"private": true,
-	"description": "Nuxt.js project",
+	"description": "torchiba's portfolio",
 	"author": "torchiba <account@torch-design.work>",
 	"scripts": {
 		"build": "nuxt build",
-		"build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
 		"dev": "nuxt",
-		// "generate": "nuxt generate",
-		"generate": "nuxt generate && rm -rf gh-pages/* && cp -r dist/ gh-pages/",
-		"generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+		"generate": "nuxt generate",
 		"precommit": "npm run lint",
-		"start": "nuxt start"
+		"start": "nuxt start",
+		"deploy": "push-dir --dir=dist --branch=master --cleanup"
 	},
 	"dependencies": {
 		"element-ui": "^2.4.8",
@@ -33,6 +31,7 @@
 		"postcss-loader": "^3.0.0",
 		"pug": "2.0.3",
 		"pug-plain-loader": "^1.0.0",
+		"push-dir": "^0.4.1",
 		"vue-cli-plugin-element-ui": "^1.1.4"
 	},
 	"browserslist": [
