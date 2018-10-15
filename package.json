@@ -1,5 +1,5 @@
 {
-	"name": "torchiba.github.io.git",
+	"name": "torchiba.github.io",
 	"version": "1.0.0",
 	"private": true,
 	"description": "Nuxt.js project",
@@ -9,7 +9,8 @@
 		"build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
 		"dev": "nuxt",
-		"generate": "nuxt generate",
+		// "generate": "nuxt generate",
+		"generate": "nuxt generate && rm -rf gh-pages/* && cp -r dist/ gh-pages/",
 		"generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
 		"precommit": "npm run lint",
 		"start": "nuxt start"
