@@ -1,9 +1,3 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-	router: {
-		base: '/torchiba.github.io.git/'
-	}
-} : {}
-
 module.exports = {
 	/*
 	 ** Headers of the page
